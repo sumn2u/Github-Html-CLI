@@ -67,7 +67,7 @@ if (program.args.length === 0) program.help();
 clear();
 console.log(
   chalk.yellow(
-    figlet.textSync('hydra-web', { horizontalLayout: 'full' })
+    figlet.textSync('github-web', { horizontalLayout: 'full' })
   )
 );
 
@@ -78,7 +78,7 @@ if (files.directoryExists('.git')) {
 
 fs.writeFile('index.html', '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><meta name="author" content=""><title>Title</title><link rel="icon" type="image/png" href="favicon.png"><link rel="stylesheet" href="assets/style.css"></head><body></body></html>', function (err) {
   if (err) return console.log(err);
-  console.log('Hello World > helloworld.txt');
+  // console.log('Hello World > helloworld.txt');
 });
 var github = new GitHubApi({
   version: '3.0.0'
